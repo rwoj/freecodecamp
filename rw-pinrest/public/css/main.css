@@ -1,0 +1,98 @@
+
+/********* Fonts **********/
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+/****** Main Styling ******/
+
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: 'Roboto', sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #EEE;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+.grid-sizer, .grid-item
+{  width: 24%;
+margin-bottom: 10px;
+}
+.gutter-sizer { width: 1%;}
+
+.grid-item {
+  float: left;
+  background: #ffffff;
+  border: 2px solid #666666;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+.grid-item .description {
+  display: block;
+  max-width: 100%;
+  text-align: center;
+  color: #333333;
+  background: #EEE;
+  border: 2px solid;
+  border-color: #ffffff;
+}
+.box{
+  max-width: 100%;
+  background: #EEE;
+  border: 2px solid;
+  border-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.oi-x {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  color: red;
+}
+.oi-star{
+  color: blue;
+  width: 25px;
+  height: 40px;
+  margin-top: 10px;
+}
+.oi:hover{
+  cursor: pointer;
+}
+.notouch:hover {
+  cursor: not-allowed;
+}
+.likesBox {
+  margin-right: 10px;
+}
+.grid-item:hover{
+  border-color: blue;
+}
