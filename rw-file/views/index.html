@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Image search</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+        <form method="post" action="/filesize" enctype="multipart/form-data">
+          <h4>Submit a file to view its filesize:</h4>
+          <label>
+            <input type="file" name="avatar"  onchange="$('#upload-file').html($(this).val());">
+          </label>
+          <input type='submit' value='File size'/>
+        </form>
+      </div>
+   </body>
+
+</html>
